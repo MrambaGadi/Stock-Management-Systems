@@ -1,0 +1,3 @@
+category,item_name,quantity,receive_quantity,receive_by,issue_quantity,issue_by,issue_to,phone_number,created_by,reorder_level,last_updated
+1,test1,1,0,9,0,9,9,9,9,arbadjie,0,2020-06-11,
+2,test2,2,0,9,0,9,9,9,9,arbadjie,0,2020-08-11,
