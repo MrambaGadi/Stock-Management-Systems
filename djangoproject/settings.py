@@ -9,11 +9,9 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 
-Heroku setup reference : https://www.codementor.io/@jamesezechukwu/how-to-deploy-django-app-on-heroku-dtsee04d4
 """
 
 import os
-import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -28,9 +26,7 @@ SECRET_KEY = 'bnu1i5*1omr&(31!w0s+5#$otok9%2+=h6rrf^4q%z#^jgcsw)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-#ALLOWED_HOSTS = ['https://stock-management-systems.herokuapp.com']
-ALLOWED_HOSTS = ['https://stock-management-application.herokuapp.com',
-                 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -160,7 +156,3 @@ DEFAULT_FROM_EMAIL='mrambagsn@gmail.com'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
-
-heroku config:set DISABLE_COLLECTSTATIC=1
